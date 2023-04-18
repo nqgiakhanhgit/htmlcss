@@ -15,6 +15,7 @@ li{
   list-style: none;
 }
 a{
+  
 text-decoration: none;
 color: aliceblue;
 font-size: 1.5rem;
@@ -38,6 +39,7 @@ justify-content: space-between;
 .navbar .navbar_logo a{
 font-size: 10rem;
 font-weight: bold;
+
 }
 
 
@@ -52,9 +54,12 @@ font-weight: bold;
 font-family: 'Libre Franklin', sans-serif;
 }
 .navbar_list-item:hover{
+  
   font-size: 2rem;
   font-family: monospace;
   text-transform: uppercase;
+      text-shadow: 5px -2px 13px #ccc;
+
 
 }
 
@@ -101,22 +106,115 @@ font-family: 'Libre Franklin', sans-serif;
       font-family: 'Libre Franklin', sans-serif;
       font-size: 20rem;
       text-transform: uppercase;
+      text-shadow: 5px -2px 13px #ccc;
     }
     .service{
       font-size: 3rem;
       font-weight: 100;
+      text-shadow: 5px -2px 13px #ccc;
     }
     #left.service{
+      text-decoration: overline;
       margin-right: 20%;
-      text-decoration:underline;
+      
+     
     }
         #right.service{
       margin-left: 20%;
-      text-decoration:underline;
+      text-decoration: underline;
+    
     }
     /* stickynav */
     .sticky {
   position: fixed;
   top: 0;
   width: 90%;
+  
 }
+/* form */
+
+
+ .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1300px;
+        }
+
+        .info {
+            flex-basis: 50%;
+            padding: 20px;
+            text-align: center;
+            line-height: 3rem;
+            font-size: 2rem;
+        }
+
+        .contact {
+            flex-basis: 50%;
+            padding: 10px;
+            line-height: 3rem;
+            font-size: 2rem;
+      
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 20px;
+    background-color: #303236;;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+
+          
+         
+            border-bottom: solid;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #303236;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #303236;
+        
+        }
+
+        .message {
+            display: none;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        .success {
+            color: #4CAF50;
+        }
+
+        .error {
+            color: #f44336;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .info,
+            .contact {
+                flex-basis: 100%;
+            }
+        }

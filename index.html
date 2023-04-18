@@ -27,10 +27,10 @@
             </div>
 
             <ul class="navbar-list">
-               <li><a href="#" class="navbar_list-item">Home</a></li>
-               <li><a href="#" class="navbar_list-item">Service</a></li>
-               <li><a href="#" class="navbar_list-item">Contact</a></li>
-               <li><a href="#" class="navbar_list-item">Service</a></li>
+    <li><a href="#home" class="navbar_list-item">Home</a></li>
+    <li><a href="#about" class="navbar_list-item">About</a></li>
+    <li><a href="#contact" class="navbar_list-item">Contact</a></li>
+    <li><a href="#service" class="navbar_list-item">Service</a></li>
             </ul>
             
         
@@ -40,10 +40,10 @@
             </div>
 
             <div class="dropdown_menu open">
-                <li><a href="#" class="navbar_list-item">Home</a></li>
-                <li><a href="#" class="navbar_list-item">Service</a></li>
-                <li><a href="#" class="navbar_list-item">Contact</a></li>
-                <li><a href="#" class="navbar_list-item">Service</a></li>
+                <li><a href="#home" class="navbar_list-item">Home</a></li>
+                <li><a href="#about" class="navbar_list-item">About</a></li>
+                <li><a href="#contact" class="navbar_list-item">Contact</a></li>
+                <li><a href="#service" class="navbar_list-item">Service</a></li>
             </div>
         </header>
         <main>
@@ -51,25 +51,30 @@
                 <h4 class="service" id="left">I AM</h4>
                 <h1 class="home_heading">Kis </h1>
                 <h4 class="service" id="right">WEB DESIGN</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum delectus a corrupti minus error nulla? Molestiae architecto exercitationem sit est doloremque. Fugiat corrupti saepe sit neque facilis. Nesciunt, debitis.</p>
+               
             </section>
-            <section class="home" id="home">
-                <h4 class="service" id="left">I AM</h4>
-                <h1 class="home_heading">Kis </h1>
-                <h4 class="service" id="right">WEB DESIGN</h4>
-            
-            </section>
-            <section class="home" id="home">
-                <h4 class="service" id="left">I AM</h4>
-                <h1 class="home_heading">Kis </h1>
-                <h4 class="service" id="right">WEB DESIGN</h4>
-              
-            </section>
-             <section class="home" id="home">
-                <h4 class="service" id="left">I AM</h4>
-                <h1 class="home_heading">Kis </h1>
-                <h4 class="service" id="right">WEB DESIGN</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum delectus a corrupti minus error nulla? Molestiae architecto exercitationem sit est doloremque. Fugiat corrupti saepe sit neque facilis. Nesciunt, debitis.</p>
+            <section class="home" id="contact">
+        <div class="container">
+            <div class="info">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu odio ac quam aliquet pharetra. Donec
+                    sagittis mi in eros posuere lacinia. Integer sed quam vel mi efficitur vulputate. </p>
+            </div>
+            <div class="contact">
+                <h2>Get In Touch</h2>
+                <form id="contact-form" method="post" action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"
+                        required></textarea>
+                    <input type="submit" value="Send">
+                </form>
+                <div class="message"></div>
+            </div>
+        </div>
             </section>
         </main>
 <script>
@@ -79,7 +84,6 @@
     toggleBtn.onclick = function(){
         DropDownMenu.classList.toggle('open')
         const isOpen = DropDownMenu.classList.contains('open')
-
         toggleBtnIcon.classList=isOpen
         ?'fa-solid fa-xmark'
         :'fa-solid fa-bars'
